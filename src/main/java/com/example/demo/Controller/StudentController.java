@@ -1,14 +1,19 @@
-package com.example.demo.Controller;
+package com.example.demo.controller;
 
 import java.util.Collection;
 
-import com.example.demo.Entity.Student;
-import com.example.demo.Service.StudentService;
+import com.example.demo.entity.Student;
+import com.example.demo.service.StudentService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import org.apache.logging.log4j.*;
 
 /**
  * StudentController
@@ -17,15 +22,44 @@ import org.springframework.web.bind.annotation.RestController;
  @RestController
  @RequestMapping("/students")
 public class StudentController {
+    final static Logger logger = LogManager.getLogger(StudentController.class);
+
 
     @Autowired
     private StudentService studentService;
 
 
-
     @RequestMapping(method = RequestMethod.GET)
     public Collection<Student> getAllStudents()
-    {
+    {   
+        logger.info("Fetched all students");     
+
         return studentService.getAllStudents();
     }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public Student getStudentById(@PathVariable("id")  int id)
+    {
+        return studentService.getStudentById(id);
+    }
+
+    @RequestMapping(consumes = MediaType.TEXT_PLAIN_VALUE, method =RequestMethod.POST)
+    public String echoString(@RequestBody String string){
+        
+        return string;
+
+    }
+
+    @RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE, method =RequestMethod.PUT)
+    public void insertStudent(@RequestBody Student student){
+        
+       studentService.insertStudent(student);
+
+    }
+
+
+
+
+
+
 }

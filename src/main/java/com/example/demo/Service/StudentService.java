@@ -1,13 +1,13 @@
-package com.example.demo.Service;
+package com.example.demo.service;
 
-import com.example.demo.Dao.*;
-import com.example.demo.Entity.Student;
+import com.example.demo.dao.*;
+import com.example.demo.entity.Student;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
+import org.apache.logging.log4j.*;
 
 /**
  * StudentService
@@ -15,6 +15,7 @@ import java.util.Collection;
 
  @Service
 public class StudentService {
+    final static Logger logger = LogManager.getLogger(StudentService.class);
 
     @Autowired
     private StudentDao studentDao;
@@ -25,6 +26,14 @@ public class StudentService {
         return studentDao.getAllStudents();
     }
 
+    public Student getStudentById(int id)
+    {
+        return studentDao.getStudentById(id);
+    }
 
+    public void insertStudent(Student student){
+
+        studentDao.insertStudent(student);
+   }
 
 }

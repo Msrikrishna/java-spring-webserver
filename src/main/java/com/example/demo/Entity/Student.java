@@ -1,5 +1,7 @@
-package com.example.demo.Entity;
+package com.example.demo.entity;
 
+
+import org.apache.logging.log4j.*;
 
 /**
  * Student
@@ -7,6 +9,7 @@ package com.example.demo.Entity;
 
  
 public class Student {
+    final static Logger logger = LogManager.getLogger(Student.class);
 
     private int id;
     private String name;
@@ -16,6 +19,7 @@ public class Student {
         this.id = id;
         this.name = name;
         this.classesEnrolled = classesEnrolled;
+        logger.info("Student object created with id %d", id);
     }
     public Student() {
         
