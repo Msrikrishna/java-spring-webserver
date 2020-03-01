@@ -31,7 +31,6 @@ public class StudentService {
 
     public List<Student> getAllStudents()
     {   
-        studentRepository.findAll().forEach(students::add);
         studentRepository.saveAll(students);
         return students;
     }
