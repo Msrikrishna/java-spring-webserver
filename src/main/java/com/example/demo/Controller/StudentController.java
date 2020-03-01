@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.apache.logging.log4j.*;
 
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 /**
  * StudentController
  */
@@ -23,7 +24,7 @@ import org.apache.logging.log4j.*;
  @RestController
  @RequestMapping("/students")
 public class StudentController {
-    final static Logger logger = LogManager.getLogger(StudentController.class);
+	final static Logger logger = LoggerFactory.getLogger(StudentController.class);
 
 
     @Autowired

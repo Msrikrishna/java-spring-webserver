@@ -7,7 +7,9 @@ import java.util.Map;
 import com.example.demo.entity.Student;
 
 import org.springframework.stereotype.Repository;
-import org.apache.logging.log4j.*;
+
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 /**
  * StudentDao
@@ -16,7 +18,7 @@ import org.apache.logging.log4j.*;
  @Repository
 public class StudentDao {
    private static Map<Integer,Student> students;
-   final static Logger logger = LogManager.getLogger(StudentDao.class);
+   final static Logger logger = LoggerFactory.getLogger(StudentDao.class);
 
    static 
    {

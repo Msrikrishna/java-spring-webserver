@@ -1,7 +1,9 @@
 package com.example.demo.entity;
 
 
-import org.apache.logging.log4j.*;
+
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 /**
  * Student
@@ -9,7 +11,7 @@ import org.apache.logging.log4j.*;
 
  
 public class Student {
-    final static Logger logger = LogManager.getLogger(Student.class);
+	final static Logger logger = LoggerFactory.getLogger(Student.class);
 
     private int id;
     private String name;

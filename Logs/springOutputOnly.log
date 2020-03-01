@@ -1,23 +1,582 @@
-2020-03-01 13:51:34.776  INFO 39455 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39455 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
-2020-03-01 13:51:34.778  INFO 39455 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-03-01 13:51:34.822  INFO 39455 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-03-01 13:51:34.822  INFO 39455 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-03-01 13:51:35.367  INFO 39455 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2020-03-01 13:51:35.397  INFO 39455 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JDBC repository interfaces.
-2020-03-01 13:51:36.157  INFO 39455 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-03-01 13:51:36.173  INFO 39455 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-01 13:51:36.173  INFO 39455 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
-2020-03-01 13:51:36.262  INFO 39455 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-01 13:51:36.263  INFO 39455 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1441 ms
-2020-03-01 13:51:36.336  INFO 39455 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
-2020-03-01 13:51:36.337  INFO 39455 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
-2020-03-01 13:51:36.337  INFO 39455 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
-2020-03-01 13:51:36.337  INFO 39455 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
-2020-03-01 13:51:36.338  INFO 39455 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
-2020-03-01 13:51:36.537  INFO 39455 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-01 13:51:36.608  INFO 39455 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2020-03-01 13:51:36.664  INFO 39455 --- [restartedMain] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:hsqldb:mem:testdb', username='sa'
-2020-03-01 13:51:37.071  INFO 39455 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-03-01 13:51:37.129  INFO 39455 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-03-01 13:51:37.134  INFO 39455 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 3.698 seconds (JVM running for 4.144)
-2020-03-01 13:51:37.135  INFO 39455 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 14:13:51.928  INFO 39892 --- [http-nio-8080-exec-3] c.e.demo.controller.StudentController    : Fetched all students
+2020-03-01 14:28:05.511  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 14:28:05.512 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 14:28:05.512  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 14:28:05.811  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 14:28:05.811  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 14:28:05.811  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 14:28:05.811  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 14:28:05.811  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 14:28:05.978  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.515 seconds (JVM running for 914.665)
+2020-03-01 14:28:05.981  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 14:51:48.344  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 14:51:48.344 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 14:51:48.345  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 14:51:48.600  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 14:51:48.600  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 14:51:48.601  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 14:51:48.601  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 14:51:48.601  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 14:51:48.737  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.423 seconds (JVM running for 2337.401)
+2020-03-01 14:51:48.738  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:19:26.551  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:19:26.551 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:19:26.551  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:19:26.734  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	LoggerFactory cannot be resolved
+	DemoApplication cannot be resolved to a type
+
+2020-03-01 15:19:26.747 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	LoggerFactory cannot be resolved
+	DemoApplication cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	LoggerFactory cannot be resolved
+	DemoApplication cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	LoggerFactory cannot be resolved
+	DemoApplication cannot be resolved to a type
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:19:31.187  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:19:31.187 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:19:31.187  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:19:31.349  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2020-03-01 15:19:31.354 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:19:46.831  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:19:46.832 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:19:46.832  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:19:47.025  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2020-03-01 15:19:47.029 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:19:55.497  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:19:55.497 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:19:55.497  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:19:55.701  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2020-03-01 15:19:55.706 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:20:11.199  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:20:11.199 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:20:11.199  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:20:11.412  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2020-03-01 15:20:11.418 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:20:25.931  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:20:25.931 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:20:25.932  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:20:26.142  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2020-03-01 15:20:26.148 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:20:43.621  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:20:43.622 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:20:43.622  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:20:43.786  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2020-03-01 15:20:43.792 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:20:50.256  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:20:50.256 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:20:50.257  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:20:50.418  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2020-03-01 15:20:50.422 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:21:00.883  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:21:00.884 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:21:00.884  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:21:01.051  WARN 39892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2020-03-01 15:21:01.055 ERROR 39892 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentController' defined in file [/Users/srikrishnamannem/demo-spring/target/classes/com/example/demo/controller/StudentController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.StudentController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.example.demo.controller.StudentController.<init>(StudentController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+
+2020-03-01 15:21:05.498  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:21:05.498 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:21:05.498  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:21:05.648  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:21:05.649  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:21:05.649  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:21:05.649  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:21:05.649  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:21:05.745  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.26 seconds (JVM running for 4094.388)
+2020-03-01 15:21:05.746  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:23:33.026  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:23:33.026 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:23:33.026  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:23:33.155  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:23:33.155  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:23:33.155  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:23:33.155  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:23:33.155  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:23:33.233  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.223 seconds (JVM running for 4241.874)
+2020-03-01 15:23:33.234  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:25:00.214  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:25:00.214 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:25:00.214  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:25:00.343  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:25:00.343  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:25:00.343  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:25:00.343  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:25:00.343  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:25:00.425  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 3.231 seconds (JVM running for 4329.065)
+2020-03-01 15:25:00.426  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:26:41.488  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:26:41.488 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:26:41.489  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:26:41.634  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:26:41.634  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:26:41.634  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:26:41.634  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:26:41.635  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:26:41.726  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.258 seconds (JVM running for 4430.364)
+2020-03-01 15:26:41.727  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:28:55.917  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:28:55.917 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:28:55.917  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:28:56.086  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:28:56.086  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:28:56.086  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:28:56.086  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:28:56.086  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:28:56.199  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.299 seconds (JVM running for 4564.836)
+2020-03-01 15:28:56.200  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:29:46.908  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:29:46.908 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:29:46.909  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:29:47.040  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:29:47.041  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:29:47.041  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:29:47.041  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:29:47.041  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:29:47.118  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.225 seconds (JVM running for 4615.755)
+2020-03-01 15:29:47.119  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:29:52.611  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:29:52.611 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:29:52.611  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:29:52.741  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:29:52.741  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:29:52.741  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:29:52.741  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:29:52.741  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:29:52.815  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.218 seconds (JVM running for 4621.451)
+2020-03-01 15:29:52.819  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:32:09.112  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:32:09.112 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:32:09.112  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:32:09.253  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:32:09.253  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:32:09.253  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:32:09.253  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:32:09.253  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:32:09.337  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.242 seconds (JVM running for 4757.971)
+2020-03-01 15:32:09.338  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
