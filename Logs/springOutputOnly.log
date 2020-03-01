@@ -580,3 +580,13 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2020-03-01 15:32:09.253  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
 2020-03-01 15:32:09.337  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.242 seconds (JVM running for 4757.971)
 2020-03-01 15:32:09.338  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
+2020-03-01 15:35:49.167  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on Sris-MBP.connectify with PID 39892 (/Users/srikrishnamannem/demo-spring/target/classes started by srikrishnamannem in /Users/srikrishnamannem/demo-spring)
+2020-03-01 15:35:49.167 DEBUG 39892 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-01 15:35:49.167  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-03-01 15:35:49.294  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:35:49.295  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:35:49.295  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:35:49.295  INFO 39892 --- [restartedMain] com.example.demo.entity.Student          : Student object created with id %d
+2020-03-01 15:35:49.295  INFO 39892 --- [restartedMain] com.example.demo.dao.StudentDao          : Created static database
+2020-03-01 15:35:49.390  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.242 seconds (JVM running for 4978.022)
+2020-03-01 15:35:49.390  INFO 39892 --- [restartedMain] com.example.demo.DemoApplication         : Started app
