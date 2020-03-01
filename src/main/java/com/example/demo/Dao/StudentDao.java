@@ -7,7 +7,6 @@ import java.util.Map;
 import com.example.demo.entity.Student;
 
 import org.springframework.stereotype.Repository;
-import org.springframework.boot.logging.log4j2.*;
 import org.apache.logging.log4j.*;
 
 /**
