@@ -50,10 +50,19 @@ public class StudentController {
 
 
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Student getStudentById(@PathVariable("id")  Long id)
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET )
+    public Student getStudentById(@PathVariable("id")  Long id) 
     {
-        return studentService.getStudentById(id).isPresent()?studentService.getStudentById(id).get():null;
+
+        Student student = new Student();
+        try {
+           
+             student = studentService.getStudentById(id).get();
+        } catch (NoSuchElementException e) {
+            
+        }
+        
+        return student;
     }
 
     @RequestMapping(consumes = MediaType.TEXT_PLAIN_VALUE, method =RequestMethod.POST)

@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.slf4j.Logger;
 
@@ -16,19 +17,20 @@ import org.slf4j.Logger;
  */
 
 @Entity
+@Table
 public class Student {
     final static Logger logger = LoggerFactory.getLogger(Student.class);
     
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO) //This automatically generates an Id
-    private int id;
+    private Long id;
 
     //These are not JPA annotated
     private String name;
     private String classesEnrolled;
 
-    public Student(int id, String name, String classesEnrolled) {
+    public Student(Long id, String name, String classesEnrolled) {
         this.id = id;
         this.name = name;
         this.classesEnrolled = classesEnrolled;
@@ -43,11 +45,11 @@ public class Student {
     }
     
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

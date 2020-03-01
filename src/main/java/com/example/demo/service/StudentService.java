@@ -23,20 +23,22 @@ public class StudentService {
     private StudentRepository studentRepository;
 
     private List<Student> students = new ArrayList<Student>(Arrays.asList(
-            new Student(1, "Sri", "Maths"),
-            new Student(2,"Mansi","CSE"),
-            new Student(3, "Uwe" , "Architecture")   
+            new Student(1L, "Sri", "Maths"),
+            new Student(2L, "Mansi", "CSE"),
+            new Student(3L, "Uwe", "Architecture")
 
     ));
 
     public List<Student> getAllStudents()
     {   
         studentRepository.findAll().forEach(students::add);
+        studentRepository.saveAll(students);
         return students;
     }
 
     public Optional<Student> getStudentById(Long id)
     {
+
         MDC.put("ClientId",Long.toString(id)); 
         
         /**Even if multiple clients do this at the same time, the log will 
@@ -51,7 +53,8 @@ public class StudentService {
         // Do something here with this particular clientid\
 
         MDC.clear();
-        return studentRepository.findById(id);
+        Optional<Student> findById = studentRepository.findById(id);
+        return findById;
         
     }
 
