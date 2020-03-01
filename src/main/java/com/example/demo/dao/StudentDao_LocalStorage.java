@@ -12,13 +12,13 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
 /**
- * StudentDao
+ * StudentDao_LocalStorage
  */
 
  @Repository
-public class StudentDao {
+public class StudentDao_LocalStorage {
    private static Map<Integer,Student> students;
-   final static Logger logger = LoggerFactory.getLogger(StudentDao.class);
+   final static Logger logger = LoggerFactory.getLogger(StudentDao_LocalStorage.class);
 
    static 
    {

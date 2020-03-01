@@ -20,12 +20,12 @@ public class StudentService {
 	final static Logger logger = LoggerFactory.getLogger(StudentService.class);
 
     @Autowired
-    private StudentDao studentDao;
+    private StudentDao_LocalStorage StudentDao_LocalStorage;
 
 
     public Collection<Student> getAllStudents()
     {
-        return studentDao.getAllStudents();
+        return StudentDao_LocalStorage.getAllStudents();
     }
 
     public Student getStudentById(int id)
@@ -44,13 +44,13 @@ public class StudentService {
         // Do something here with this particular clientid\
 
         MDC.clear();
-        return studentDao.getStudentById(id);
+        return StudentDao_LocalStorage.getStudentById(id);
         
     }
 
     public void insertStudent(Student student){
 
-        studentDao.insertStudent(student);
+        StudentDao_LocalStorage.insertStudent(student);
    }
 
 }
