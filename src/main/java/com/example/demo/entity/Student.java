@@ -3,17 +3,28 @@ package com.example.demo.entity;
 
 
 import org.slf4j.LoggerFactory;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import org.slf4j.Logger;
 
 /**
  * Student
  */
 
- 
+@Entity
 public class Student {
-	final static Logger logger = LoggerFactory.getLogger(Student.class);
+    final static Logger logger = LoggerFactory.getLogger(Student.class);
+    
 
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO) //This automatically generates an Id
     private int id;
+
+    //These are not JPA annotated
     private String name;
     private String classesEnrolled;
 
@@ -23,9 +34,14 @@ public class Student {
         this.classesEnrolled = classesEnrolled;
         logger.info("Student object created with id %d", id);
     }
-    public Student() {
-        
+    public Student() {}
+
+    @Override
+    public String toString(){
+
+        return String.format("Student[id=%d, name='%s', classesEnrolled='%s']", id,name,classesEnrolled);
     }
+    
 
     public int getId() {
         return id;

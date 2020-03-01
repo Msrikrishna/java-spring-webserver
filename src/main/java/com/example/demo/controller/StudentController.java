@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import java.util.Collection;
+import java.util.*;
 
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
@@ -32,7 +32,7 @@ public class StudentController {
 
 
     @RequestMapping(method = RequestMethod.GET)
-    public Collection<Student> getAllStudents()
+    public List<Student> getAllStudents()
     {   
         logger.info("Fetched all students");     
         return studentService.getAllStudents();
@@ -51,9 +51,9 @@ public class StudentController {
 
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Student getStudentById(@PathVariable("id")  int id)
+    public Student getStudentById(@PathVariable("id")  Long id)
     {
-        return studentService.getStudentById(id);
+        return studentService.getStudentById(id).isPresent()?studentService.getStudentById(id).get():null;
     }
 
     @RequestMapping(consumes = MediaType.TEXT_PLAIN_VALUE, method =RequestMethod.POST)
@@ -63,12 +63,10 @@ public class StudentController {
 
     }
 
-    @RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE, method =RequestMethod.PUT)
-    public void insertStudent(@RequestBody Student student){
-        
-       studentService.insertStudent(student);
-
-    }
+    // @RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE, method =RequestMethod.PUT)
+    // public void insertStudent(@RequestBody Student student){    
+    //    studentService.insertStudent(student);
+    // }
 
 
 }

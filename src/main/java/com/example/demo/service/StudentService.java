@@ -6,7 +6,7 @@ import com.example.demo.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
+import java.util.*;
 
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
@@ -20,17 +20,24 @@ public class StudentService {
 	final static Logger logger = LoggerFactory.getLogger(StudentService.class);
 
     @Autowired
-    private StudentDao_LocalStorage StudentDao_LocalStorage;
+    private StudentRepository studentRepository;
 
+    private List<Student> students = new ArrayList<Student>(Arrays.asList(
+            new Student(1, "Sri", "Maths"),
+            new Student(2,"Mansi","CSE"),
+            new Student(3, "Uwe" , "Architecture")   
 
-    public Collection<Student> getAllStudents()
-    {
-        return StudentDao_LocalStorage.getAllStudents();
+    ));
+
+    public List<Student> getAllStudents()
+    {   
+        studentRepository.findAll().forEach(students::add);
+        return students;
     }
 
-    public Student getStudentById(int id)
+    public Optional<Student> getStudentById(Long id)
     {
-        MDC.put("ClientId",Integer.toString(id)); 
+        MDC.put("ClientId",Long.toString(id)); 
         
         /**Even if multiple clients do this at the same time, the log will 
         maintain integrity of the flow for every user by mapping them with this command.
@@ -44,14 +51,24 @@ public class StudentService {
         // Do something here with this particular clientid\
 
         MDC.clear();
-        return StudentDao_LocalStorage.getStudentById(id);
+        return studentRepository.findById(id);
         
     }
 
-    public void insertStudent(Student student){
 
-        StudentDao_LocalStorage.insertStudent(student);
-   }
+    
+
+    public void create(Student student) {
+        studentRepository.save(student);    
+    }
+
+    public void delete(Student student) {
+        studentRepository.delete(student);    
+    }
+
+    
+
+
 
 }
 
