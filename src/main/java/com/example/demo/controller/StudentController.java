@@ -39,6 +39,9 @@ public class StudentController {
          
     }
 
+
+
+    //This also outputs a html page
     @RequestMapping(method = RequestMethod.GET, value = "greeting")
     public String greeting(@RequestParam(name ="name", required = false, defaultValue = "World") String name, Model model)
     {
@@ -65,17 +68,17 @@ public class StudentController {
         return student;
     }
 
-    @RequestMapping(consumes = MediaType.TEXT_PLAIN_VALUE, method =RequestMethod.POST)
-    public String echoString(@RequestBody String string){
+
+    //Any POST request will be handled by this
+    @RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE, method =RequestMethod.POST)
+    public String insertStudent(@RequestBody Student student){
         
-        return string;
+        studentService.save(student);
+        return "Created Student!"+ student.toString();
 
     }
 
-    // @RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE, method =RequestMethod.PUT)
-    // public void insertStudent(@RequestBody Student student){    
-    //    studentService.insertStudent(student);
-    // }
+    
 
 
 }

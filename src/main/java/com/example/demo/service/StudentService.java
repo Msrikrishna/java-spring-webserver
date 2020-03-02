@@ -22,17 +22,17 @@ public class StudentService {
     @Autowired
     private StudentRepository studentRepository;
 
-    private List<Student> students = new ArrayList<Student>(Arrays.asList(
+    private List<Student> my_initial_list = new ArrayList<Student>(Arrays.asList(
             new Student(1L, "Sri", "Maths"),
             new Student(2L, "Mansi", "CSE"),
             new Student(3L, "Uwe", "Architecture")
 
     ));
 
-    public List<Student> getAllStudents()
+    public void populateInitialStudents()
     {   
-        studentRepository.saveAll(students);
-        return students;
+        studentRepository.saveAll(my_initial_list);
+       ;
     }
 
     public Optional<Student> getStudentById(Long id)
@@ -56,9 +56,10 @@ public class StudentService {
         return findById;
         
     }
+    public void save(Student student){
+        studentRepository.save(student);
 
-
-    
+    }
 
     public void create(Student student) {
         studentRepository.save(student);    
@@ -67,6 +68,19 @@ public class StudentService {
     public void delete(Student student) {
         studentRepository.delete(student);    
     }
+
+	public List<Student> getAllStudents() {
+          
+        List<Student> my_list = new ArrayList<Student>();
+        Iterator<Student> my_iterator = studentRepository.findAll().iterator();
+        while(my_iterator.hasNext())
+        {
+            my_list.add(my_iterator.next());
+        }
+
+        return my_list;
+
+	}
 
     
 
