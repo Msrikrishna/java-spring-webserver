@@ -85,6 +85,14 @@
 			<artifactId>jakarta.mail</artifactId>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/info.bliki.wiki/bliki-core -->
+		<dependency>
+			<groupId>info.bliki.wiki</groupId>
+			<artifactId>bliki-core</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+
 		
 	</dependencies>
 

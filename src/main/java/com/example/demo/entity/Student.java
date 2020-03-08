@@ -1,8 +1,7 @@
 package com.example.demo.entity;
 
-
-
 import org.slf4j.LoggerFactory;
+import org.springframework.data.relational.core.mapping.Column;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,8 +25,10 @@ public class Student {
     @GeneratedValue(strategy=GenerationType.AUTO) //This automatically generates an Id
     private Long id;
 
-    //These are not JPA annotated
+    @Column(keyColumn = "Student's name")
     private String name;
+
+    @Column(keyColumn = "Classes he enrolled")
     private String classesEnrolled;
 
     public Student(Long id, String name, String classesEnrolled) {

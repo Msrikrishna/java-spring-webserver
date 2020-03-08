@@ -31,7 +31,7 @@ public class StudentController {
     private StudentService studentService;
 
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, value="")
     public List<Student> getAllStudents()
     {   
         logger.info("Fetched all students");     
@@ -39,6 +39,12 @@ public class StudentController {
          
     }
 
+    @RequestMapping(method = RequestMethod.POST, value="deleteall")
+    public String deleteAllStudents()
+    {   
+        studentService.deleteAllStudents();
+         return "Deleted all students in the DB";
+    }
 
 
     //This also outputs a html page
@@ -70,13 +76,15 @@ public class StudentController {
 
 
     //Any POST request will be handled by this
-    @RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE, method =RequestMethod.POST)
+    @RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE, method =RequestMethod.POST, value="create")
     public String insertStudent(@RequestBody Student student){
         
         studentService.save(student);
         return "Created Student!"+ student.toString();
 
     }
+
+
 
     
 

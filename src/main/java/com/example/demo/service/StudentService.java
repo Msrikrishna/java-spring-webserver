@@ -82,7 +82,11 @@ public class StudentService {
 
 	}
 
-    
+    public void deleteAllStudents() {
+          
+        studentRepository.deleteAll();
+
+	}
 
 
 
