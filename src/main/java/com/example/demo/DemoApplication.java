@@ -37,7 +37,7 @@ public class DemoApplication {
 	}
 
 	@Bean
-	public User getUSer(){
+	public User getUser(){
 		return new User(null, null, "https://en.wiktionary.org/w/api.php");
 	}
 

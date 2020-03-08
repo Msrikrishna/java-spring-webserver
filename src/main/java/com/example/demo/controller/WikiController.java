@@ -29,13 +29,21 @@ public class WikiController {
       @Autowired
       retrieveWikiService my_wiki_service;
 
-      @GetMapping("/wiki")
-     @RequestMapping(method = RequestMethod.GET)
+      @GetMapping("/withhelper")
      public String getContentsController(@RequestParam(name = "page", defaultValue = "Java")   String query ){
 
          
-         return my_wiki_service.getContents(query);
+         return my_wiki_service.getContentsFromHelper(query);
      }
+
+     
+     @GetMapping("/direct")
+     public String getContentsDirectController(@RequestParam(name = "page", defaultValue = "Java")   String query ){
+
+         
+         return my_wiki_service.getContentDirectlyFromWiki(query);
+     }
+
  
     
  
