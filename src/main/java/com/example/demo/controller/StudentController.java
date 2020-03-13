@@ -70,7 +70,6 @@ public class StudentController {
         } catch (NoSuchElementException e) {
             
         }
-        
         return student;
     }
 

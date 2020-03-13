@@ -35,7 +35,7 @@ public class Student {
         this.id = id;
         this.name = name;
         this.classesEnrolled = classesEnrolled;
-        logger.info("Student object created with id %d", id);
+        logger.info("Student object created with id: "+ id);
     }
     public Student() {}
 
