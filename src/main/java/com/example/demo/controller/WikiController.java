@@ -40,7 +40,6 @@ public class WikiController {
      @GetMapping("/direct")
      public String getContentsDirectController(@RequestParam(name = "page", defaultValue = "Java")   String query ){
 
-         
          return my_wiki_service.getContentDirectlyFromWiki(query);
      }
 
