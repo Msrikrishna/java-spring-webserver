@@ -30,7 +30,6 @@ public class TwilioMessagingService {
     @Async("asyncExecutor")
     public CompletableFuture<String> sendSMSWithTwilio(MyMessageEntity messageEntity) throws InterruptedException {
       Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-      TimeUnit.SECONDS.sleep(12);
       Message message = Message.creator(new PhoneNumber(messageEntity.getToPhoneNumber()),
           new PhoneNumber(FROM_PHONE_NUMBER), 
           messageEntity.getMessageText()).create();

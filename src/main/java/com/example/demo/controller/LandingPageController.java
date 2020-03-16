@@ -17,6 +17,7 @@ public class LandingPageController {
 @GetMapping("/")
 public ModelAndView showInit(Model model,@RequestParam(value="name", required=false, defaultValue="World") String name){
 
+    
     ModelAndView mav = new ModelAndView("hello");  //Retrieves hello.html from templates
     model.addAttribute("username", "Sri");
     return mav ;
