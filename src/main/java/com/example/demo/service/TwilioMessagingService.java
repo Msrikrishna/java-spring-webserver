@@ -20,8 +20,9 @@ import org.slf4j.MDC;
 public class TwilioMessagingService {
     final static Logger logger = LoggerFactory.getLogger(TwilioMessagingService.class);
 
-    public static final String ACCOUNT_SID = "AC9fba48d2ca5f1de56b0abc5ec8493d13";
-    public static final String AUTH_TOKEN = "67f29461d6153be63f2a4e9f8f81f5a5";
+    // Find your Account Sid and Token at twilio.com/user/account
+    public static final String ACCOUNT_SID = System.getenv("TWILIO_ACCOUNT_SID");
+    public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
     public static final String FROM_PHONE_NUMBER = "+14242861053";
 
     //No purpose here. A simple demo of Async usage- This starts process in a new thread.
